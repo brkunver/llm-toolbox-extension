@@ -6,7 +6,7 @@ import tailwindcss from "@tailwindcss/vite"
 // https://astro.build/config
 export default defineConfig({
   site: "https://brkunver.github.io",
-  base: "/llm-toolbox-extension",
+  //base: "/llm-toolbox-extension",
   vite: {
     plugins: [tailwindcss()],
   },
