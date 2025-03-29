@@ -1,5 +1,6 @@
 ---
 import "../styles/global.css"
+import "@fontsource-variable/inter"
 ---
 
 <!doctype html>
@@ -10,7 +11,9 @@ import "../styles/global.css"
     <link rel="icon" type="image/png" href="/favicon.png " />
     <title>LLM Toolbox</title>
   </head>
-  <body class="flex flex-col h-screen">
-    <slot />
+  <body class="flex flex-col h-screen align-center text-center font-sans text-black">
+    <main class="mt-10">
+      <slot />
+    </main>
   </body>
 </html>
