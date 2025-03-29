@@ -1,7 +1,24 @@
 ---
+import { Image } from "astro:assets"
+import chromeLogo from "../assets/chrome-logo.png"
+import firefoxLogo from "../assets/firefox-logo.png"
+import edgeLogo from "../assets/edge-logo.png"
 
+const width = 150
+const height = 150
 ---
 
-<section id="download">
-  <a href="">Get it from Chrome Extension Store</a>
+<section id="download" class="mt-4 flex flex-col gap-4">
+  <p class="text-2xl font-bold underline underline-offset-4">Get it from Extension Store</p>
+  <div class="flex flex-col md:flex-row justify-center items-center gap-4">
+    <a href="https://chromewebstore.google.com/detail/mcnpjmjpbdinjoocaekmlnafndbbnfjm?utm_source=item-share-cb">
+      <Image src={chromeLogo} alt="Chrome extension store" width={width} height={height} />
+    </a>
+    <a href="https://addons.mozilla.org/tr/firefox/addon/llm-toolbox/">
+      <Image src={firefoxLogo} alt="Firefox extension store" width={width} height={height} />
+    </a>
+    <a href="https://microsoftedge.microsoft.com/addons/detail/llm-toolbox/fbiflpnbkhaiflgdolhekldojniaakoi">
+      <Image src={edgeLogo} alt="Edge extension store" width={width} height={height} />
+    </a>
+  </div>
 </section>
