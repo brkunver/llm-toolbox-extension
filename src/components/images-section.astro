@@ -1,0 +1,15 @@
+---
+import { Image } from "astro:assets"
+import homeMenu from "../assets/extension-images/home-menu.png"
+---
+
+<section class="w-full flex flex-col justify-center mt-10">
+  <div class="flex flex-col justify-center items-center gap-4">
+    <h2 class="text-3xl font-bold">It <span class="text-blue-600">integrates</span> with your ui</h2>
+    <p class="font-semibold text-lg">
+      So you can access your <span class="text-blue-600">prompts</span> and <span class="text-green-600">bookmarks</span
+      > without opening a new interface
+    </p>
+    <Image class="rounded w-[400px] lg:w-[800px]" src={homeMenu} alt="LLM Toolbox Menu" />
+  </div>
+</section>
